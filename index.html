@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            perspective: 800px;
+        }
+        #info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: orange;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -150px;
+            margin-top: -150px;
+            width: 300px;
+            height: 300px;
+            border-radius: 30px;
+            transform: rotate3d(0, 0, 0);
+        }
+    </style>
 </head>
 <body>
-    <div id="info"></div>
+    <div id="info">
+
+    </div>
     <script type="module" src="app.js"></script>
 </body>
 </html>
