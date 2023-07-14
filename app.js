@@ -14,7 +14,7 @@ window.addEventListener('load', () =>{
             infoDiv.innerHTML = `alfa: ${ev.alpha}<br>`;
             infoDiv.innerHTML += `beta: ${ev.beta}<br>`;
             infoDiv.innerHTML += `gamma: ${ev.gamma}<br>`;
-            infoDiv.style.transform = `rotateX(${ev.alpha}deg) rotateY(${ev.beta}deg) rotateX(${ev.gamma}deg)`;
+            infoDiv.style.transform = `rotateX(${ev.alpha}deg) rotateY(${ev.gamma}deg) rotateZ(${ev.alpha}deg)`;
         });
     }
 
