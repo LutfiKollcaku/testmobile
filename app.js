@@ -11,12 +11,22 @@ window.addEventListener('load', () =>{
         // evento peer l'orientazione del device
         window.addEventListener('deviceorientation' , (ev)=>{
             // testarlo sul telefono
+            /*
             infoDiv.innerHTML = `alfa: ${ev.alpha}<br>`;
             infoDiv.innerHTML += `beta: ${ev.beta}<br>`;
             infoDiv.innerHTML += `gamma: ${ev.gamma}<br>`;
             infoDiv.style.transform = `rotateX(${ev.alpha}deg) rotateY(${ev.gamma}deg) rotateZ(${ev.alpha}deg)`;
+            */
         });
     }
 
+    function mostraPosizione (pos) {
+        infoDiv.innerHTML = pos.coords.latitude + ". " + pos.coords.longitude;
+    }
+
+    // geocalizzazione 
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(mostraPosizione)
+    }
 
 });
